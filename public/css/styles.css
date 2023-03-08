@@ -1,0 +1,73 @@
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color:  #0093E9 !important;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+
+
+.btn-float{
+float: left;
+margin-right: 10px;
+
+
+}
+
+.fa-solid{
+    font-size: 3.2rem;
+    margin: 0;
+    display: none;
+    position: relative;
+    bottom: 8px;
+    
+}
+.date{
+    display: inline;
+    margin-left: 10px;
+    position: relative;
+    bottom: 5px;
+   
+}
+.title{
+    display: inline;
+}
+
+.title-date{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.content{
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}

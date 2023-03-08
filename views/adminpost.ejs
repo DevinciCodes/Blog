@@ -1,0 +1,23 @@
+<%- include('partials/adminheader') -%>
+<div class="title-date">
+<h1 class="title"><%= title %></h1>
+<h6 class="date"><%= moment().format('MMMM Do YYYY') %></h6>
+</div>
+<p class="content"><%= content %></p> 
+
+
+<a href="/posts/edit/<%= id %>" class="btn btn-float">
+    <i class="fa-solid fa-pen-to-square"></i>
+    </a>
+
+
+
+<form action="/posts/<%= id %>?_method=DELETE" method="POST" id="delete-form">
+    <input type="hidden" name="_method" value="DELETE">
+        <button onclick =" return confirm('Are you sure you want to delete?');" type="submit" class="btn btn-danger btn-sm">
+             <i class="fas fa-trash"></i>
+        </button>
+ </form>
+
+
+

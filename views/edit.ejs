@@ -1,0 +1,16 @@
+<%- include('partials/adminheader') -%>
+
+<h1>Edit</h1>
+<form action="/posts/<%= post._id %>?_method=PUT" method="POST">
+    <input type="hidden" name="_method" value="PUT">
+    <div class="form-group">
+        <label for="">Title</label>
+<input class="form-control" type="text" name="postTitle" value="<%= post.title %>">
+    <label for="">Post</label>
+<textarea class="form-control" name="postBody" id="" cols="30" rows="5"><%= post.content %></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit" name="button">Publish</button>
+</form>
+
+
+

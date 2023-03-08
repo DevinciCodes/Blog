@@ -1,0 +1,21 @@
+<%- include('partials/adminheader') -%>
+
+
+<p><%=startingContent %></p>
+
+
+
+
+
+<% posts.forEach(function(post){ %>
+    <div class="title-date">
+        <h1 class="title"><%= post.title %></h1>
+        <h6 class="date"><%= moment().format('MMMM Do YYYY') %></h6>
+    </div>
+    <p class="content"><%= post.content.substring(0, 100) + " ..."%>
+        <a href="/posts/<%=post._id%>">Read More</a></p>
+
+<% }) %>
+
+
+
